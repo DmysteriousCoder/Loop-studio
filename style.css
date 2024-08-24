@@ -52,6 +52,11 @@ nav{
     font-size: 14px;
 }
 
+.nav-links a:hover {
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+    padding-bottom: 10px;
+}
+
 .hero {
     width: 70%;
     display: flex;
@@ -170,12 +175,17 @@ nav{
     font-size: 60px;
 }
 
-.create .top button {
+.create button {
     border: 1px solid black;
     color: black;
     padding: 10px 30px;
     background: transparent;
     font-size: 20spx;
+}
+
+.create .top button:hover {
+    background-color: black;
+    color: white;
 }
 
 .create .bottom {
@@ -195,6 +205,18 @@ nav{
     justify-content: center;
     background-repeat: no-repeat;
     padding: 60px 20px;
+    cursor: pointer;
+}
+
+.create .bottom .card:hover {
+    opacity: 0.5;
+    color: black !important;
+}
+
+.create .bottom .card:hover p {
+    color: black;
+    font-weight: 600;
+    opacity: 1 !important;
 }
 
 .create .bottom .card p {
@@ -236,6 +258,11 @@ footer .top .social-links {
     gap: 1em;
 }
 
+footer .top .social-links a:hover {
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+    padding-bottom: 3px;
+}
+
 footer .bottom {
     width: 100%;
     display: flex;
@@ -245,4 +272,85 @@ footer .bottom {
 
 footer .bottom .copy-text p {
     color: hsl(0, 0%, 55%);
+}
+
+
+.desktop-hide {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+@media screen and (max-width: 420px) {
+    .desktop-hide {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+
+    nav {
+        width: 80%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        width: 80%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .vr {
+        flex-direction: column;
+        width: 80%;
+        gap: .5em;
+    }
+
+    .vr-image {
+        flex: 0;
+    }
+
+    .vr-cont .vr .txt {
+        position: static;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 50%;
+    }
+
+    .vr-cont .vr .txt h3 {
+        font-size: 20px;
+    }
+
+    .create {
+        width: 80%;
+    }
+
+    .create .top h3 {
+        font-size: 35px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .create .bottom {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .create .bottom .card {
+        width: 100%;
+        height: 70px;
+    }
 }
