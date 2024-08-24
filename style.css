@@ -23,8 +23,8 @@ ul li {
 header {
     display: flex;
     flex-direction: column;
-    padding: 50px 0;
-    gap: 10em;
+    padding: 30px 0;
+    gap: 6em;
     align-items: center;
     width: 100%;
     background-image: url("./images/desktop/image-hero.jpg");
@@ -64,7 +64,7 @@ nav{
     padding: 10px 25px;
     font-size: 57px;
     color: hsl(0, 0%, 100%);
-    width: 60%;
+    width: 70%;
     border: 2px solid hsl(0, 0%, 100%);
     font-weight: 400;
     letter-spacing: 10px;
@@ -89,8 +89,8 @@ nav{
 }
 
 .vr-image img {
-    width: 100%;
-    height: auto;
+    width: 60%;
+    height: 90%;
 }
 
 /*
@@ -113,17 +113,20 @@ nav{
 .vr-cont .vr .txt {
     position: absolute;
     background-color: white;
-    bottom: -50px;
-    left: 50%;
+    bottom: -40%;
+    right: -7%;
     transform: translate(-50%, -50%);
     width: 80%;
-    padding: 20px;
-    width: 80%;
+    padding: 20px 3%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
 }
 
 .vr .txt h3 {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
     letter-spacing: 10px;
     text-align: center;
@@ -170,20 +173,20 @@ nav{
 .create .top button {
     border: 1px solid black;
     color: black;
-    padding: 15px 30px;
+    padding: 10px 30px;
     background: transparent;
-    font-size: 22px;
+    font-size: 20spx;
 }
 
 .create .bottom {
     display: flex;
     flex-wrap: wrap;
-    gap: 2.5em;
+    gap: 2%;
     width: 100%;
 }
 
 .create .bottom .card {
-    width: 22%;
+    width: 23%;
     object-fit: cover;
     background-position: center;
     height: 470px;
@@ -191,11 +194,55 @@ nav{
     align-items: flex-end;
     justify-content: center;
     background-repeat: no-repeat;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 .create .bottom .card p {
     color: white;
     font-size: 30px;
     text-align: left;
+}
+
+.footer-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 150px;
+    padding: 30px 0;
+}
+
+footer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+footer .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .top .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+footer .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .bottom .copy-text p {
+    color: hsl(0, 0%, 55%);
 }
