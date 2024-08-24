@@ -163,13 +163,39 @@ nav{
 
 .create .top h3 {
     color: black;
-    font-weight: 400;
-    font-size: 40px;
+    font-weight: 600;
+    font-size: 60px;
 }
 
 .create .top button {
     border: 1px solid black;
     color: black;
-    padding: 10px 20px;
+    padding: 15px 30px;
     background: transparent;
+    font-size: 22px;
+}
+
+.create .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    width: 100%;
+}
+
+.create .bottom .card {
+    width: 22%;
+    object-fit: cover;
+    background-position: center;
+    height: 470px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-repeat: no-repeat;
+    padding: 40px 20px;
+}
+
+.create .bottom .card p {
+    color: white;
+    font-size: 30px;
+    text-align: left;
 }
